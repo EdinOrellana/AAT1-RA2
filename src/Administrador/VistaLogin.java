@@ -39,9 +39,9 @@ public class VistaLogin extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jtflContra = new javax.swing.JTextField();
         jtflUsuario = new javax.swing.JTextField();
         btnIniciarsesion = new javax.swing.JButton();
+        jtflContra = new javax.swing.JPasswordField();
 
         jLabel1.setText("POS");
 
@@ -70,8 +70,8 @@ public class VistaLogin extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnIniciarsesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jtflContra)
-                            .addComponent(jtflUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jtflUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                            .addComponent(jtflContra)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(151, 151, 151)
                         .addComponent(jLabel1)))
@@ -92,7 +92,7 @@ public class VistaLogin extends javax.swing.JInternalFrame {
                     .addComponent(jtflContra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnIniciarsesion)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -131,7 +131,8 @@ public class VistaLogin extends javax.swing.JInternalFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Contraseña de usuario incorrecta", "INCORRECTO", JOptionPane.ERROR_MESSAGE);
         }
-
+        jtflContra.setText("");
+        jtflUsuario.setText("");
     }//GEN-LAST:event_btnIniciarsesionActionPerformed
 
 
@@ -141,7 +142,7 @@ public class VistaLogin extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     public static javax.swing.JPanel jPanel1;
-    public static javax.swing.JTextField jtflContra;
+    private javax.swing.JPasswordField jtflContra;
     public static javax.swing.JTextField jtflUsuario;
     // End of variables declaration//GEN-END:variables
 }
